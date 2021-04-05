@@ -1,3 +1,4 @@
+/* https://pang2h.tistory.com/342 */
 #include <Windows.h>
 #include <cmath>
 
