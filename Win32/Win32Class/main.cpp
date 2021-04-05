@@ -1,6 +1,6 @@
 #include "mainWin.h"
 
-int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow) {
+int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 	MainWindow win;
 
 	if (!win.Create(L"Win32 UI", WS_OVERLAPPEDWINDOW)) return -1;

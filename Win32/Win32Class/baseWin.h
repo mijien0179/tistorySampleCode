@@ -11,7 +11,7 @@ public:
 			CREATESTRUCT* pCreate = reinterpret_cast<CREATESTRUCT*>(lParam);
 			pThis = reinterpret_cast<DERIVED_TYPE*>(pCreate->lpCreateParams);
 			SetWindowLongPtr(hWnd, GWLP_USERDATA, reinterpret_cast<LONG_PTR>(pThis));
-			this->hWnd = hWnd;
+			pThis->hWnd = hWnd;
 		}
 		else {
 			pThis = reinterpret_cast<DERIVED_TYPE*>(GetWindowLongPtr(hWnd, GWLP_USERDATA));
